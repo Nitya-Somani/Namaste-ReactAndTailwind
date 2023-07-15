@@ -1,0 +1,75 @@
+Q1. what is emmet ?
+
+Ans - Emmet is a set of plug-ins for text editors that allows for
+high-speed coding and editing in HTML, XML, XSLT, and other structured
+code formats via content assist.[Content/Code assist is functionality provided by some IDEs, which helps the developer to write code faster and more efficiently. This is achieved by simplifying the task of coding to allow focus on the business task being coded.]
+The tools have been incorporated into several popular text editors, 
+as well as some plug-ins developed by the Emmet team and others implemented
+independently.
+
+Q2.Difference between library and framework ?
+
+Ans - A library and a framework are two different concepts in software development, although they are related and often used together. Here's the difference between the two:
+
+Library:
+A library is a collection of precompiled code modules or functions that are intended to be reused by developers to simplify and speed up the development process. Libraries typically provide specific functionality, such as data manipulation, networking, or user interface components. Developers can include the library in their projects and selectively use the functions or modules as needed. Libraries are usually independent and do not impose a specific structure or flow on the application.
+
+Key characteristics of a library include:
+
+Reusability: Libraries are designed to be reusable across multiple projects.
+Specific functionality: Libraries are focused on providing specific functionality or solving particular problems.
+Independent: Libraries are typically standalone and can be used independently of other libraries or tools.
+Control flow: Libraries do not dictate the control flow of the application and allow developers to decide how to use them.
+Example: The NumPy library in Python provides functions for numerical computing and array manipulation. Developers can import specific functions from NumPy and use them in their code.
+
+Framework:
+A framework is a more comprehensive software structure that provides a foundation for building applications. It is a reusable set of libraries, tools, and conventions that dictate the overall structure and flow of an application. Frameworks often include libraries and provide additional functionality such as handling requests, managing databases, and enforcing architectural patterns. They provide a skeleton or scaffolding for developers to build upon, defining the overall architecture and control flow of the application.
+
+Key characteristics of a framework include:
+
+Application structure: Frameworks define the overall structure and flow of an application, including how components interact and how requests are handled.
+Convention over configuration: Frameworks often follow specific conventions, reducing the need for developers to make configuration decisions and allowing them to focus on application-specific logic.
+Extensibility: Frameworks provide extension points and hooks that allow developers to customize or extend the default behavior.
+Inversion of Control: Frameworks often employ inversion of control, where the framework itself manages the flow of the application and calls user-defined code at specific points.
+Example: Ruby on Rails is a web application framework that provides a structure for building web applications. It includes libraries for handling HTTP requests, managing databases, and enforcing the MVC (Model-View-Controller) architectural pattern.
+
+In summary, libraries are focused on providing specific functionality that can be used independently, while frameworks provide a structure and a set of conventions for building applications, often incorporating libraries to support that structure.
+
+
+Ques 2. what is cdn ? why do we use it ?
+Ans - CDN stands for Content Delivery Network. It is a distributed network of servers located in different geographical locations that work together to deliver web content to users more efficiently. CDNs are used to improve the performance, reliability, and scalability of delivering content over the internet.
+
+Here are the reasons why CDNs are used:
+
+1. Faster content delivery: CDNs store cached copies of website content (such as images, CSS files, JavaScript files, videos, etc.) on servers located closer to the end users. When a user requests content, the CDN serves it from the server nearest to the user's location. This reduces the latency and improves the load time of web pages, resulting in a faster and smoother user experience.
+
+2. Load distribution: CDNs distribute the traffic load across multiple servers, reducing the burden on any single server. This helps prevent server overload and ensures that the website remains accessible even during high-traffic periods or sudden spikes in demand.
+
+3. Scalability: CDNs provide scalability by allowing website owners to handle increased traffic without having to invest in additional infrastructure. CDNs have a large number of servers globally, which can handle a high volume of requests simultaneously.
+
+4. Reducing network congestion: By delivering content from servers closer to the end users, CDNs help reduce network congestion and optimize bandwidth usage. This benefits both website owners and users by minimizing delays and improving overall network performance.
+
+5. Improved availability and reliability: CDNs replicate content across multiple servers, which helps in achieving high availability and redundancy. If one server fails, the CDN can automatically route requests to another available server, ensuring that the content remains accessible even in the event of a server failure or outage.
+
+6. Security and DDoS mitigation: Some CDNs offer additional security features, such as DDoS (Distributed Denial of Service) protection, SSL/TLS encryption, and web application firewalls. These features help protect websites from malicious attacks and enhance the overall security of the content being delivered.
+
+In summary, CDNs are used to improve the performance, reliability, and scalability of delivering web content by caching and distributing it across a network of servers located globally. CDNs enhance the user experience, reduce server load, optimize bandwidth, and provide additional security features.
+
+
+Ques 4. why is React Known as React ?
+React is known as "React" because the name reflects its core principle and philosophy of reactive user interfaces. The name "React" signifies the way React handles changes in data and automatically updates the user interface in response to those changes.
+
+React was initially developed by Facebook and was first released in 2013. It was created to solve specific challenges faced by Facebook's engineering team while building complex user interfaces for their web applications. One of the main goals was to efficiently update and render components in response to changes in the underlying data.
+
+React introduced a novel approach called the Virtual DOM (Document Object Model), which is a lightweight representation of the actual DOM. Instead of directly manipulating the DOM, React compares the Virtual DOM with the real DOM and updates only the necessary parts, optimizing performance and rendering efficiency.
+
+The name "React" signifies the reactive nature of the framework, where the user interface reacts and updates in response to changes in data. It highlights the core concept of efficiently rendering and updating components based on changes in state or props. By focusing on reactivity, React simplifies the development of interactive and dynamic user interfaces.
+
+Over time, React has gained widespread popularity and has become one of the most widely used JavaScript libraries for building user interfaces. Its name, "React," has become synonymous with its efficient and reactive approach to building UI components.
+
+
+Ques 5 .
+
+
+
+
