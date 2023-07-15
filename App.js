@@ -37,6 +37,22 @@ root.render(<HeadingComponent/>); */
 for eg if we have to include title component inside heading component  
 */
 
+//IMPORTANT POWER OF JSX if you write inside curly brackets then you can write 
+//Javascript inside it 
+//for eg :
+
+const superNum = 1234;
+
+const SuperPowerOFJSX = () =>
+(
+    <div id="container">
+        <h1>I AM THE SUPER POWER OF JSX !!!!!</h1>
+        <h2>{superNum}</h2>
+
+    </div>
+)
+
+
 
 
 const Title = () => {
@@ -80,5 +96,7 @@ component will not be visible.
 
 */
 
-root.render(<Heading />);
-root.render(<Title />);
+//root.render(<Heading />);
+//root.render(<Title />);
+
+root.render(<SuperPowerOFJSX/>)
