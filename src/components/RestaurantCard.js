@@ -9,7 +9,6 @@ const RestaurantCard = (resData) => {
       <div className="card">
         <div className="card-media">
           <img src={IMG_URL + cloudinaryImageId} alt="res-card-img" />
-          <div className="delivery-time">{deliveryTime}</div>
           <div className="bookmark"></div>
         </div>
         <div className="card-description">
