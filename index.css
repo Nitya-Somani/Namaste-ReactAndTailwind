@@ -1,13 +1,48 @@
-#header
+.header
 {
-    color:greenyellow;
+    display:flex;
+    justify-content: space-between;
+    border :1px solid black;
+    
 }
 
-.heading 
+.Logo img{
+
+    width: 150px;
+    
+
+}
+
+.nav-items{
+    padding:10px;
+}
+
+.nav-items > ul{
+
+    display:flex;
+    list-style:none;
+    
+
+}
+
+.nav-items > ul >li{
+    font-size:24px;
+    padding:20px;
+    
+
+}
+
+
+.res-card
 {
-    color: blue;
-<<<<<<< HEAD
-=======
-    background-color: yellowgreen;
->>>>>>> 374d3e0 (React | Episode -1)
+    width:200px;
+    height:400px;
+    background-color: #948888;
+    border:1px solid black;
+}
+
+img{
+    width:90%;
+    height:90%;
+    margin:10px 5px 10px 5px;
 }
