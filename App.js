@@ -50,6 +50,7 @@ const Body = () =>
       {/*to include the cards of restaurant we r including restaurant card component  */}
         <RestaurantCard/>
         
+        
       </div>
     </div>
   )
@@ -59,7 +60,8 @@ const Body = () =>
 
 /* at the end of the day we can write css as json object */
 stylecard = {
-  backgroundColor :"yellow"
+  backgroundColor :"yellow",
+  border:"1px solid black"
 }
 
 
@@ -67,7 +69,10 @@ const RestaurantCard = () =>
 { 
   return (
     <div className="res-card">
-      <h2 style ={stylecard}>I.C.H</h2>
+      <h2 style ={{
+  backgroundColor :"blue",
+  border:"1px solid black"
+}}>I.C.H</h2>
       <div className="resCard-img">
       <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/eerbyy1fi3pbotrwgzux" alt="res-card-img" />
 
