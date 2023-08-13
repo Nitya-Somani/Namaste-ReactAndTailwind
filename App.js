@@ -46,10 +46,11 @@ const Body = () =>
   return(
     <div className="body">
       <div className="searchBar">Search Bar</div>
-      <div className="retaurantConatiner">
-      {/*to include the cards of restaurant we r including restaurant card component  */}
-        <RestaurantCard/>
-        
+      <div className="restaurantContainer">
+      {/*to include the cards of restaurant we are  including restaurant card component  */}
+        <RestaurantCard resName="KFC" resRating ="4"/>
+        <RestaurantCard resName = "MCD" resRating = "6"/>
+       
         
       </div>
     </div>
@@ -65,17 +66,23 @@ stylecard = {
 }
 
 
-const RestaurantCard = () =>
+const RestaurantCard = (props) =>
 { 
+  {/* Props stands for properties 
+  Basically when we are sending the props into a componenet at the end of the day we are passing it like 
+  the arguments to a function in javascript 
+  
+ */}
+  console.log(props);
   return (
     <div className="res-card">
-      <h2 style ={{
-  backgroundColor :"blue",
-  border:"1px solid black"
-}}>I.C.H</h2>
+      
       <div className="resCard-img">
       <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/eerbyy1fi3pbotrwgzux" alt="res-card-img" />
-
+      <h3>{props.resName}</h3>
+      <h4>{props.resRating} stars</h4>
+      <h4>Briyani,North Indian ,Asian</h4>
+      <h4>38 mins</h4>
       </div>
       <div>
 
