@@ -69,6 +69,7 @@
     border: 1.5px solid black;
     cursor: pointer;
     border-radius: 10px;
+    background-color: black;
 }
 
 .card {
@@ -95,6 +96,8 @@
     transform: scale(0.9);
     /* Adjust the scale factor for the zoom effect */
     border-radius: 10px;
+    
+    
 }
 
 
@@ -171,3 +174,54 @@
     margin-bottom: 6px;
 
 }
+
+.filterButton {
+    border: none;
+    background: none;
+    margin:15px;
+  }
+  
+  .filterButton span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .filterButton svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .filterButton:hover svg {
+    transform: translateX(0);
+  }
+  
+  .filterButton:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .filterButton:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
