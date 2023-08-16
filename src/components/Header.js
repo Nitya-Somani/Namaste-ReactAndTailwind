@@ -24,9 +24,10 @@ const Header = () => {
                   <a className="nav-link" href="#">Contact</a>
                 </li>
               </ul>
+              
               <form className="d-flex ms-auto nav-item search-form">
                 <div className="search-wrapper">
-                  <input className="form-control me-2 p-1 ps-2" type="text" placeholder="Search" />
+                  <input className="form-control me-2 p-1 ps-2" type="text" placeholder="Search for restaurant, cuisine or a dish" />
                   <button type="submit" className="search-button">
                     <i className="fa fa-search"></i>
                   </button>

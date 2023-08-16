@@ -163,10 +163,12 @@
   .search-form input[type="text"]:hover::placeholder {
     font-size: 14px;
     transition: font-size 0.3s ease-in-out;
+  
   }
 
   .search-wrapper {
     position: relative;
+    width:350px;
   }
   
   .search-button {
@@ -288,12 +290,15 @@
 
 }
 
-.cards-container:hover {
+.card:hover {
 
-    border: 1.5px solid black;
+    
     cursor: pointer;
     border-radius: 10px;
-    background-color: black;
+   background-color: white;
+    transform: scale(1.0);
+    border: 2px solid #000;
+    animation: border-animation 2s infinite;
 }
 
 .card {
