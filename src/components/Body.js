@@ -1,10 +1,40 @@
-import { useState } from "react";
-import resList from "../utils/mockData";
+import { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
+import Shimmer from "./Shimmer";
 
 
 const Body = () => {
-  const [filteredresList, setfilteredresList] = useState(resList);
+  const [filteredresList, setfilteredresList] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, [])
+
+
+  const fetchData = async () => {
+    try {
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.7051457&lng=75.8559729&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+      const json = await data.json();
+
+      setfilteredresList(
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      );
+    } catch (error) {
+      setfilteredresList([])
+    }
+  }
+
+
+  console.log("Before condition");
+  if (filteredresList.length === 0) {
+
+    return (
+      <div className="body">
+        <Shimmer />
+      </div>
+    )
+  }
+
   return (
     <div className="body">
       <button className="filterButton" onClick={
@@ -22,13 +52,16 @@ const Body = () => {
       <div className="restaurantContainer">
         {/*to include the cards of restaurant we are  including restaurant card component  */}
         {
-          filteredresList.map((restaurant) => (
-            <RestaurantCard key={restaurant.info.id} resData={restaurant} />
-          ))
+          filteredresList.map((restaurant) => {
+            return (
+              <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
+            )
+          })
+
         }
       </div>
     </div>
   )
-}
 
+}
 export default Body;

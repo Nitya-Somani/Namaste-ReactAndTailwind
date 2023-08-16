@@ -1,8 +1,10 @@
+
 import { IMG_URL } from "../utils/commonLinks";
 
 const RestaurantCard = (resData) => {
   const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, areaName, locality } = resData?.resData.info;
-  const { deliveryTime, serviceability } = resData?.resData.info.sla;
+ 
+
 
   return (
     <div className="cards-container">
