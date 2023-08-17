@@ -1,5 +1,9 @@
+import { useState } from "react";
 import { LOGO_URL } from "../utils/commonLinks";
+
 const Header = () => {
+//whenever state variable update , react triggers a reconciliation cycle (re renders the component )
+  const [toggleUserAuth,setToggleUserAuth] = useState("Login");
   return (
         <nav className="navbar navbar-expand-sm p-3 fixed-top">
           <div className="container-fluid">
@@ -43,7 +47,14 @@ const Header = () => {
                   <li><a className="dropdown-item" href="#">About</a></li>
                   <li><a className="dropdown-item" href="#">Contact</a></li>
                   <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Sign in</a></li>
+                  <li><a className="dropdown-item" 
+                  onClick={
+                    ()=>(
+                      toggleUserAuth==="Login"?setToggleUserAuth("Logout"):setToggleUserAuth("Login")  
+                    )
+                  }>{toggleUserAuth}</a>
+                    
+                  </li>
                 </ul>
               </div>
             </div>

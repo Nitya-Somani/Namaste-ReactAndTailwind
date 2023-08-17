@@ -15,7 +15,6 @@ const Body = () => {
     try {
       const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.7051457&lng=75.8559729&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
       const json = await data.json();
-
       setfilteredresList(
         json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
       );
@@ -25,17 +24,9 @@ const Body = () => {
   }
 
 
-  console.log("Before condition");
-  if (filteredresList.length === 0) {
 
-    return (
-      <div className="body">
-        <Shimmer />
-      </div>
-    )
-  }
 
-  return (
+  return filteredresList.length === 0 ?<div className="body"><Shimmer/></div>:(
     <div className="body">
       <button className="filterButton" onClick={
         () => {
