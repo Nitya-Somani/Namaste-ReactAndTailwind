@@ -1,21 +1,59 @@
-Namaste React 
+Namaste React
 
+# md stands for markdown document
 
-# Plan your code 
+# Plan your code
+
 <!-- * Header
-    - Navbar 
-        -logo 
+    - Navbar
+        -logo
         - anchor links (Home, About us , contact us , cart)
-* Body 
+* Body
     -searchbar and search button
-    -Resaturant card container 
+    -Resaturant card container
       - cards (6)
-      -rating , cuisine ,image , restaurant name 
-* Footer 
-    - copyright 
+      -rating , cuisine ,image , restaurant name
+* Footer
+    - copyright
     - Description about  the company .   -->
 
- # Props stands for properties 
- # Basically when we are sending the props into a componenet at the end of the day we are passing it like 
-  # the arguments to a function in javascript 
- 
+# Props stands for properties
+
+# Basically when we are sending the props into a componenet at the end of the day we are passing it like
+
+# the arguments to a function in javascript
+
+# Lesson - 7
+
+How does useEffect hook come ?
+
+# IT comes from the named import from react
+
+USE EFFECT IS CALLED WITH TWO ARGUMENTS \_
+1 ) is callback function
+2)dependency array
+when is the use effect called
+
+- useEffect is called after every render f that component
+  only callback function is mandatory in the argument the depency array is not that important
+  case 1:
+  useEffect(()=>{
+  with callback function
+  })
+  so if the useeffect is rendered only with the callback function then the useeffect will be rendered everytime wheneveer the component is rendered
+
+case 2:
+what if useEffect hook is rendered with callback function and empty array ?
+
+- whenever
+  useEffect (()=>{
+
+},[])
+useEffect is rendered like this then the useEffect will be rendered only once only at the time of initialization
+
+case 3 :
+what if useEffect is rendered with a array having value for eg :
+useEffect (()=>{
+
+},[someArray])
+so now the use effect will be rendered everytime whenever the array - [someArray will be updated ]

@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb
   .search-button {
     position: absolute;
     right: 0;
-    top: 35%;
+    top: 45%;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;

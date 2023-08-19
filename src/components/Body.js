@@ -41,7 +41,7 @@ const Body = () => {
             <input
               className="form-control me-2 p-1 ps-2"
               type="text"
-              placeholder="Search for restaurant, cuisine or a dish"
+              placeholder="Search for restaurant or cuisine "
               value={searchText}
               onChange={(e) => {
                 setSearchText(e.target.value);
