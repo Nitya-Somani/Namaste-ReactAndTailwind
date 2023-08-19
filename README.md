@@ -64,3 +64,19 @@ so now the use effect will be rendered everytime whenever the array - [someArray
 - useState hook should not be used above the component it will throw a error 
 - useState hook should not  be put in the if else block in the react docs it is mentioned that if u mess up with react the react will  mess with u .
 - never create use state inside for loop , function . the state variables are meant to be created inside the function component at the top and no where else .
+
+
+# shortcut to render a component -rafce in vscode
+
+# react router dom gives a special  hook for handling error 
+# whenever a function starts with use it is a hook 
+- import useRouterError from react -roter -dom 
+- const error = useRouterError();
+console.log(error);
+it will print the detailed  error 
+
+
+# client -side routing - 
+- client side routing is when when we are not  sending any network call to backend and only refreshing our components is known as client side routing 
+in react we use client side routing 
+# server - side routing is when when we are sending a network call to the page  getting the data of the page and loading the complete page   and it is therefore not used in react 

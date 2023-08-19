@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/commonLinks";
+import{Link} from "react-router-dom";
+
 
 const Header = () => {
 //whenever state variable update , react triggers a reconciliation cycle (re renders the component )
@@ -16,17 +18,27 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
               <ul className="navbar-nav">
-                <li className="nav-item ps-5">
-                  <a className="nav-link" href="#">Home</a>
+                {/* Never use anchor Link in react as it will load the complete page but i want it should only load the about component not the header so for this the react router-dom 
+                gives us a super power component as Link which help us  to achieve that  
+                link just refreshed the componets 
+                that is why the react app is known as single page application 
+                */}
+                
+                
+                <li className="nav-item ps-5">                 
+                  <Link to="/" className="nav-link" >Home</Link>
                 </li>
                 <li className="nav-item ps-5">
-                  <a className="nav-link" href="#">About</a>
+                  
+                  <Link to="/About" className="nav-link" >About </Link>
                 </li>
                 <li className="nav-item ps-5">
-                  <a className="nav-link" href="#">Vision</a>
+                
+                  <Link  to="/Vision" className="nav-link">Vision </Link>
                 </li>
                 <li className="nav-item ps-5">
-                  <a className="nav-link" href="#">Contact</a>
+                  
+                  <Link   to="/Contact" className="nav-link">Contact </Link>
                 </li>
               </ul>
       

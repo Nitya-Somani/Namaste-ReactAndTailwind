@@ -631,3 +631,50 @@ display: flex;
 .navbar-collapse {
   flex-grow: 0!important;
 }
+/*======================
+    404 page
+=======================*/
+/* Base styles */
+.page_404 {
+  padding: 20px; /* Adjust the padding as needed */
+
+  
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-size: cover;
+  height: 62vh; /* Adjust the value for image height */
+  background-position: center;
+}
+
+.four_zero_four_bg h1, .four_zero_four_bg h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: red;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+/* Media query for screens up to 768px width */
+@media (max-width: 768px) {
+  .page_404 {
+    padding: 10px 0;
+  }
+
+  .four_zero_four_bg {
+    height: 40vh;
+  }
+
+  .four_zero_four_bg h1,
+  .four_zero_four_bg h3 {
+    font-size: 30px;
+  }
+}
