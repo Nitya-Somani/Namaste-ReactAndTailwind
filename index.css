@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb
   .search-button {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
@@ -622,4 +622,12 @@ body::-webkit-scrollbar-thumb
 
 @keyframes getWidth {
 	100% { width: 100%; }
+}
+
+.searching-bar{
+display: flex;
+}
+
+.navbar-collapse {
+  flex-grow: 0!important;
 }

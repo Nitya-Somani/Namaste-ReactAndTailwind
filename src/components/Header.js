@@ -4,6 +4,7 @@ import { LOGO_URL } from "../utils/commonLinks";
 const Header = () => {
 //whenever state variable update , react triggers a reconciliation cycle (re renders the component )
   const [toggleUserAuth,setToggleUserAuth] = useState("Login");
+ 
   return (
         <nav className="navbar navbar-expand-sm p-3 fixed-top">
           <div className="container-fluid">
@@ -28,15 +29,7 @@ const Header = () => {
                   <a className="nav-link" href="#">Contact</a>
                 </li>
               </ul>
-              
-              <form className="d-flex ms-auto nav-item search-form">
-                <div className="search-wrapper">
-                  <input className="form-control me-2 p-1 ps-2" type="text" placeholder="Search for restaurant, cuisine or a dish" />
-                  <button type="submit" className="search-button">
-                    <i className="fa fa-search"></i>
-                  </button>
-                </div>
-              </form>
+      
     
               <div className="dropdown nav-item">
                 <button type="button" className="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
