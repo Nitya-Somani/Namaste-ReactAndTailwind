@@ -57,3 +57,10 @@ useEffect (()=>{
 
 },[someArray])
 so now the use effect will be rendered everytime whenever the array - [someArray will be updated ]
+
+
+# useState hook explained
+
+- useState hook should not be used above the component it will throw a error 
+- useState hook should not  be put in the if else block in the react docs it is mentioned that if u mess up with react the react will  mess with u .
+- never create use state inside for loop , function . the state variables are meant to be created inside the function component at the top and no where else .
