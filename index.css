@@ -821,3 +821,10 @@ z-index: -1;
   top: 0;
   left: 0;
 }
+
+.card-user{
+  border: 1px solid black;
+  width: 25em;
+  padding: 1em;
+  margin: 1em;
+}
