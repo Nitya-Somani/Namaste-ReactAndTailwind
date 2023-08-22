@@ -30,8 +30,7 @@ class About extends Component{
         
         <h1>Introducing Class Based Component .</h1>        
         <UserClass  Name ={"NITYA"} location ={"INDORE"}  />
-        <UserClass  Name ={"Nirmal"} location ={"INDORE"}  />
-        <UserClass  Name ={"Anand"} location ={"INDORE"}  />
+        
        
         </div>
         )
@@ -55,4 +54,4 @@ export default About;
 // user class 1st componentdid mount 
 //userclass 2nd component did mount 
 // userclass 3rd component did mount 
-
+ //to know the diagram - https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
