@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [originalData, setOriginalData] = useState([]);
@@ -32,6 +33,33 @@ const Body = () => {
     setFilteredResList(listAfterSearch);
   };
 
+
+  const onlineStatus = useOnlineStatus();
+  console.log(onlineStatus);
+  if(onlineStatus == false)
+  {return <div className="body"><div className="offlineStatus"><b>Connection Error .</b>
+    <br/>
+    <i>
+    Looks like you are offline !!! Please check your internet connection .</i>
+    <div>
+  No internet
+  <br/>
+Try:<br/>
+
+Checking the network cables, modem, and router<br/>
+Reconnecting to Wi-Fi<br/>
+Running Windows Network Diagnostics<br/>
+ERR_INTERNET_DISCONNECTED<br/>
+  </div>
+    
+    
+    </div>
+ 
+  
+  
+  </div>}
+    
+  
   return (
     <div className="body">
       <div className="searching-bar">

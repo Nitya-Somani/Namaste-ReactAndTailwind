@@ -829,3 +829,10 @@ body::-webkit-scrollbar-thumb {
 .icon-box .box:nth-child(1) {
   background-image: linear-gradient(#3b5998, #486ab4);
 }
+
+.offlineStatus{
+height: 20em;
+padding: 5em;
+background: #3d4152;
+color: white;
+}
