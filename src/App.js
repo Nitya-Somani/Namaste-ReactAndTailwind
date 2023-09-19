@@ -8,12 +8,14 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Vision from "./components/Vision";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Footer from "./components/Footer";
 
 const AppLayout = () => {
   return (
     <div>
       <Header />
       <Outlet/>
+      <Footer/>
     </div>
   );
 };
