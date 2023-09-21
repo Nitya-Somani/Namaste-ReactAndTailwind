@@ -53,6 +53,11 @@ Discover the exciting features that set TastyFood apart:
 
 📜 Click on restaurant cards to embark on a culinary adventure. Explore mouthwatering menus offered by restaurants.
 
+### 7. Lazy Loading 🚀
+
+🚀 We've implemented lazy loading to optimize app performance and loading times, ensuring a smooth experience for our users.
+
+
 ## 🚀 Getting Started
 
 Ready to embark on your culinary adventure with TastyFood? Here's how to get started:
@@ -87,10 +92,7 @@ Seamlessness Across Devices 📱💻:
 Savor a consistently delightful experience, whether you're on desktop, tablet, or mobile.
 
 🤝 Contributing
-We welcome contributions! If you'd like to contribute to TastyFood, please read our Contribution Guidelines for more information.
-
-📜 License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+We welcome contributions! If you'd like to contribute to TastyFood , please feel free to contribute it . 
 
 🙌 Acknowledgments
 We'd like to thank the following libraries and tools that made TastyFood possible:
@@ -103,4 +105,4 @@ We'd like to thank the following libraries and tools that made TastyFood possibl
 - **Babel.js**
 
 
-Thank you for being a part of the TastyFood community! Bon appétit! 🍽️
+Thank you for being a part of the TastyFood Project ! Bon appétit! 🍽️
