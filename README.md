@@ -95,14 +95,12 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 🙌 Acknowledgments
 We'd like to thank the following libraries and tools that made TastyFood possible:
 
-# React.js
+- **React.js**
+- **HTML**
+- **CSS**
+- **Bootstrap**
+- **Parcel.js**
+- **Babel.js**
 
-# HTML & CSS
-
-# Bootstrap
-
-# Parcel.js
-
-# Babel
 
 Thank you for being a part of the TastyFood community! Bon appétit! 🍽️
