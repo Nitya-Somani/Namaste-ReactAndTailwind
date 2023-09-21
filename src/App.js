@@ -1,14 +1,17 @@
 import React from "react";
+import React, { lazy ,Suspense  } from 'react';
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import About from "./components/About";
-import Contact from "./components/Contact";
 import Error from "./components/Error";
-import Vision from "./components/Vision";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Footer from "./components/Footer";
+
+
+const About = lazy(() =>import("./components/About"));
+const Contact = lazy(() =>import("./components/Contact"));
+const Vision = lazy(()=>import("./components/Vision"));
 
 const AppLayout = () => {
   return (
@@ -20,14 +23,7 @@ const AppLayout = () => {
   );
 };
 
-const fakeloader =()=>
-{
-  { console.log("hello i am fake loader  and I have runn.....")}
-  return(
-   
-    <h1>hello i am fake loader !!!!!!!11</h1>
-  )
-};  
+
 // This is how you include the children route in dom and outlet is a component in which on whatebver url we are it gets filled with that component and show that .
 //outlet will be replaced by the children component on which url we are 
 const ResRouter = createBrowserRouter([ 
@@ -43,15 +39,15 @@ const ResRouter = createBrowserRouter([
       },
       {
         path: "/About",
-        element: <About />
+        element: <Suspense  fallback={<h1>Loading ...</h1>} ><About /></Suspense >
       },
       {
         path: "/Contact",
-        element: <Contact/>
+        element: <Suspense  fallback={<h1>Loading ...</h1>}><Contact/></Suspense >
       },
       {
         path: "/Vision",
-        element: <Vision/>
+        element: <Suspense  fallback={<h1>Loading ...</h1>} ><Vision/></Suspense >
       },
       {
         path: "/Restaurants/:resId",

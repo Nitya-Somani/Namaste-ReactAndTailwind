@@ -98,3 +98,10 @@ in react we use client side routing
   and always start the custom hooks with "use" in the starting  because  by the "use" the react will come to know that it is a custom hook . 
 
   whenever you write a hook think of it as a contract and service so there is a contract and what is the hook providing the service and what actually we want as a service .
+
+
+  //CHUNKING ,Code splitting , dynamic bundling , lazy loading ,on demand loading 
+
+  it is used for lazy loading that is when we need it then only it should load and bundled in a new file .
+  app bundle size is increasing to bundle it we need the lazy loading this is also known as dynamic import 
+  
