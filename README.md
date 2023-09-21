@@ -1,6 +1,6 @@
 ❤️ Namaste React 🙏
 
-Namaste Reacth Course from Zero to Hero 🚀 by Akshay Saini Founder of NamasteDev.
+Namaste React Course from Zero to Hero 🚀 by Akshay Saini Founder of NamasteDev.
 
 This project is a part of the "Namaste React" course by Akshay Saini.
 It's a testament to the knowledge and skills gained during this course.
@@ -11,7 +11,7 @@ Welcome to **TastyFood**, where culinary adventures await! Dive into a world of 
 
 ## 🌟 Key Highlights
 
-**React.js**: We've harnessed the power of React.js to build a responsive and interactive user interface.
+- **React.js**: We've harnessed the power of React.js to build a responsive and interactive user interface.
 
 - **HTML & CSS**: Our app is structured with HTML for content and CSS for styling, ensuring it looks stunning and is easy to navigate.
 
@@ -85,6 +85,7 @@ Feast your eyes on captivating dish images, detailed descriptions, and prices.
 Seamlessness Across Devices 📱💻:
 
 Savor a consistently delightful experience, whether you're on desktop, tablet, or mobile.
+
 🤝 Contributing
 We welcome contributions! If you'd like to contribute to TastyFood, please read our Contribution Guidelines for more information.
 
@@ -94,10 +95,14 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 🙌 Acknowledgments
 We'd like to thank the following libraries and tools that made TastyFood possible:
 
-React.js
-HTML & CSS
-Bootstrap
-Parcel.js
-Babel
+# React.js
+
+# HTML & CSS
+
+# Bootstrap
+
+# Parcel.js
+
+# Babel
 
 Thank you for being a part of the TastyFood community! Bon appétit! 🍽️
