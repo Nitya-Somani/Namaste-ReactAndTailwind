@@ -77,6 +77,8 @@ To get started with TastyFood, follow these simple steps:
 2. Start the Development Server:
  - npm start 
 
+Visit and Explore 🌐
+To experience the magic of TastyFood, visit TastyFood App - https://tastyfood15.netlify.app/.
 
 Usage 🍴
 Explore Restaurants 🍔🍕:
