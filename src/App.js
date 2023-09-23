@@ -1,5 +1,5 @@
 import React from "react";
-import React, { lazy ,Suspense  } from 'react';
+import  { lazy ,Suspense  } from 'react';
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "./components/Header";

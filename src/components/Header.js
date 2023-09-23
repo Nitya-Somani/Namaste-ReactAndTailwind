@@ -8,16 +8,16 @@ const Header = () => {
   const [toggleUserAuth,setToggleUserAuth] = useState("Login");
  
   return (
-        <nav className="navbar navbar-expand-sm p-3 fixed-top">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              <img src={LOGO_URL} alt="NS Logo" className="logo-img" style={{ width: "90px" }} />
+        <nav>
+          <div>
+            <a  href="#">
+              <img src={LOGO_URL} alt="NS Logo"  style={{ width: "90px" }} />
             </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <span className="navbar-toggler-icon"></span>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span ></span>
             </button>
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul className="navbar-nav">
+            <div  id="collapsibleNavbar">
+              <ul >
                 {/* Never use anchor Link in react as it will load the complete page but i want it should only load the about component not the header so for this the react router-dom 
                 gives us a super power component as Link which help us  to achieve that  
                 link just refreshed the componets 
@@ -25,34 +25,34 @@ const Header = () => {
                 */}
                 
                 
-                <li className="nav-item ps-5">                 
-                  <Link to="/" className="nav-link" >Home</Link>
+                <li >                 
+                  <Link to="/" >Home</Link>
                 </li>
-                <li className="nav-item ps-5">
+                <li >
                   
-                  <Link to="/About" className="nav-link" >About </Link>
+                  <Link to="/About"  >About </Link>
                 </li>
-                <li className="nav-item ps-5">
+                <li >
                 
-                  <Link  to="/Vision" className="nav-link">Vision </Link>
+                  <Link  to="/Vision"  >Vision </Link>
                 </li>
-                <li className="nav-item ps-5">
+                <li >
                   
-                  <Link   to="/Contact" className="nav-link">Contact </Link>
+                  <Link   to="/Contact"  >Contact </Link>
                 </li>
               </ul>
       
     
-              <div className="dropdown nav-item">
-                <button type="button" className="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
-                  <i className="fa-regular fa-user border border-3 border-dark rounded-circle"></i>
+              <div>
+                <button type="button"  data-bs-toggle="dropdown">
+                  <i  ></i>
                 </button>
-                <ul className="dropdown-menu dropdown-menu-center">
-                  <li><a className="dropdown-item" href="#">Register</a></li>
-                  <li><a className="dropdown-item" href="#">About</a></li>
-                  <li><a className="dropdown-item" href="#">Contact</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" 
+                <ul >
+                  <li><a   href="#">Register</a></li>
+                  <li><a   href="#">About</a></li>
+                  <li><a   href="#">Contact</a></li>
+                  <li><hr   /></li>
+                  <li><a   
                   onClick={
                     ()=>(
                       toggleUserAuth==="Login"?setToggleUserAuth("Logout"):setToggleUserAuth("Login")  
