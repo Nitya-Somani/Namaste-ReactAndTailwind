@@ -13,9 +13,6 @@ Welcome to **TastyFood**, where culinary adventures await! Dive into a world of 
 
 - **React.js**: We've harnessed the power of React.js to build a responsive and interactive user interface.
 
-- **HTML & CSS**: Our app is structured with HTML for content and CSS for styling, ensuring it looks stunning and is easy to navigate.
-
-- **Bootstrap**: We've utilized Bootstrap to enhance the app's visual appeal and responsiveness.
 
 - **Parcel.js**: The bundling and development server capabilities of Parcel.js streamlined our development workflow.
 
@@ -99,12 +96,11 @@ Savor a consistently delightful experience, whether you're on desktop, tablet, o
 We welcome contributions! If you'd like to contribute to TastyFood , please feel free to contribute it . 
 
 🙌 Acknowledgments
-We'd like to thank the following libraries and tools that made TastyFood possible:
+I'd like to thank the following libraries and tools that made TastyFood possible:
 
 - **React.js**
 - **HTML**
-- **CSS**
-- **Bootstrap**
+- **Tailwind**
 - **Parcel.js**
 - **Babel.js**
 
