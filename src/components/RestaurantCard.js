@@ -7,26 +7,39 @@ const RestaurantCard = (resData) => {
 
 
   return (
-    <div className="cards-container">
-      <div className="card">
-        <div className="card-media">
-          <img src={IMG_URL + cloudinaryImageId} alt="res-card-img" />
-          <div className="bookmark"></div>
+<div className="cards-container flex flex-col items-center gap-6">
+  <div className="card bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <div className="card-media relative overflow-hidden">
+      <img
+        src={IMG_URL + cloudinaryImageId}
+        alt="Restaurant Card Image"
+        className="w-full h-56 object-cover transform scale-100 transition-transform hover:scale-105 hover:grayscale-50"
+      />
+    </div>
+    <div className="card-description p-4">
+      <div className="about-place">
+        <div className="place">
+          <p className="place-name text-xl font-semibold text-gray-800 m-0.5">
+            {name}
+          </p>
+          <p className="place-speciality text-gray-600 m-1">
+            {cuisines.join(", ")}
+          </p>
         </div>
-        <div className="card-description">
-          <div className="about-place">
-            <div className="place">
-              <p className="place-name">{name}</p>
-              <p className="place-speciality">{cuisines.join(", ")}</p>
-            </div>
-            <div className="place-review">
-              <p className="rating">{avgRating}  &#x2605;</p>
-              <p className="per-person">  {costForTwo}</p>
-            </div>
-          </div>
+        <div className="place-review flex p-3 space-x-5">
+         
+          <p className="per-person text-gray-600 ml-4">
+            Cost for Two: {costForTwo}
+          </p>
+          <p className="rating text-lg font-semibold text-red-600">
+            {avgRating} &#x2605;
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
 
   )
 }

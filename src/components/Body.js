@@ -61,51 +61,58 @@ ERR_INTERNET_DISCONNECTED<br/>
     
   
   return (
-    <div className="body">
-      <div className="searching-bar">
-       
-        <div className="d-flex ms-auto nav-item search-form">
-         
-          <div className="search-wrapper">
-            <input
-              className="form-control me-2 p-1 ps-2"
-              type="text"
-              placeholder="Search for restaurant or cuisine "
-              value={searchText}
-              onChange={(e) => {
-                setSearchText(e.target.value);
-                const listAfterSearch = originalData.filter((restaurant) =>
-                restaurant.info.name.toLowerCase().includes(searchText.toLowerCase())
-              );
-          
-              setFilteredResList(listAfterSearch);
-              }}
-            />
-            <button className="search-button" onClick={handleSearch}>
-              <i className="fa fa-search"></i>
-            </button>
-          </div>
+    <div className="body ">
+  <div className="searching-bar">
+  <div className="flex items-center justify-end space-x-4">
+    <div className="relative w-full md:w-96"> 
+      <input
+        className="border border-gray-300 rounded-lg px-3 py-2 placeholder-gray-400 focus:outline-none focus:ring focus:border-yellow-500 w-full"
+        type="text"
+        placeholder="Search for restaurant or cuisine"
+        value={searchText}
+        onChange={(e) => {
+          setSearchText(e.target.value);
+          const listAfterSearch = originalData.filter((restaurant) =>
+            restaurant.info.name.toLowerCase().includes(searchText.toLowerCase())
+          );
+
+          setFilteredResList(listAfterSearch);
+        }}
+      />
+      <button
+        className="absolute right-3 top-2 text-gray-400 hover:text-yellow-500 focus:outline-none"
+        onClick={handleSearch}
+      >
+        <i className="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div className="restaurantContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+  {filteredResList.length === 0 && searchText.length === 0 ? (
+    <Shimmer />
+  ) : filteredResList.length === 0 && searchText.length > 0 ? (
+    <div className="no-results-message text-center text-gray-600">
+      No results found for '{searchText}'
+    </div>
+  ) : (
+    filteredResList.map((restaurant) => (
+      <Link
+        key={restaurant?.info?.id}
+        to={"/restaurants/" + restaurant?.info?.id}
+        className="hover:shadow-lg transition duration-300"
+      >
+        <div className=" rounded-lg p-2 ">
+          <RestaurantCard resData={restaurant} />
         </div>
-      </div>
-      <div className="restaurantContainer">
-      {filteredResList.length === 0 && searchText.length === 0 ? (
-          <Shimmer />
-        ) : filteredResList.length === 0 && searchText.length > 0 ? (
-          <div className="no-results-message">
-            No results found for '{searchText}'
-          </div>
-        ) : (
-          filteredResList.map((restaurant) => (
-           <Link 
-           key={restaurant?.info?.id} 
-           to ={"/restaurants/"+restaurant?.info?.id } >
-            <RestaurantCard             
-              resData={restaurant}/>
-              </Link>
-            
-          ))
-        )}
-      </div>
+      </Link>
+    ))
+  )}
+</div>
+
+
     </div>
   );
 };

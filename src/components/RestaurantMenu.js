@@ -30,62 +30,63 @@ const RestaurantMenu = () => {
   );
   //this console.log prints the name of the dish
   return (
-    <section id="our_menu" className="pt-5 pb-5">
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-12">
-            <div className="page_title text-center mb-1">
-              <h1>{name}</h1>
-              <span>{cuisines.join(", ")}</span>
-              <p>
-                {locality},{city}
-              </p>
-              <div class="place-review">
-                <p class="rating">{avgRatingString} ★</p>
-                <p class="per-person"> {costForTwoMessage}</p>
-              </div>
-              <div className="single_line"></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="tab-content col-lg-12" id="myTabContent">
-            <div
-              className="tab-pane fade show active"
-              id="breakfast"
-              role="tabpanel"
-              aria-labelledby="breakfast-tab"
-            >
-              <div className="row">
-                <div className="col-12">
-                  <div>
-                    <div className="menu_content">
-                      {itemCards.map((item) => (
-                        <span key={item.card.info.id}>
-                          <div>
-                            {item.card.info.imageId && (
-                              <img
-                                src={DISH_URL + item.card.info.imageId}
-                                alt={item.card.info.name}
-                              />
-                            )}
-                          </div>
-                          <h4>
-                            <span>{item.card.info.name} </span> -{" "}
-                            <span> Rs.{item.card.info.price / 100}</span>
-                          </h4>
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<section id="our_menu" className="pt-10 pb-16 bg-gray-100">
+  <div className="container mx-auto">
+    <div className="text-center">
+      <h1 className="text-4xl font-bold text-gray-800">{name}</h1>
+      <span className="text-xl text-gray-600">{cuisines.join(", ")}</span>
+      <p className="text-lg text-gray-600">
+        {locality}, {city}
+      </p>
+      <div className="place-review flex items-center justify-center mt-4">
+        <p className="text-xl font-semibold text-yellow-500">
+          {avgRatingString} ★
+        </p>
+        <p className="ml-3 text-xl text-gray-600">{costForTwoMessage}</p>
       </div>
-    </section>
+      <div className="h-1 w-24 bg-yellow-500 mx-auto mt-4"></div>
+    </div>
+  </div>
+  
+  <div className="container mx-auto mt-12">
+    <div className="grid  gap-6">
+      {itemCards.map((item) => (
+        <div
+          key={item.card.info.id}
+          className="bg-white  flex  rounded-lg shadow-lg hover:shadow-xl overflow-hidden"
+        >
+          <div className="h-40 overflow-hidden m-5">
+            {item.card.info.imageId && (
+              <img
+                src={DISH_URL + item.card.info.imageId}
+                alt={item.card.info.name}
+                className="w-90 h-90 rounded-lg m-3 object-cover"
+              />
+            )}
+          </div>
+          <div className="p-4  m-5 ">
+            <h4 className="text-lg font-semibold text-gray-800">
+              {item.card.info.name}
+            </h4>
+            <br/>
+            <p className="text-gray-600">Rs.{item.card.info.price / 100}</p>
+            
+            <div className="flex items-center mt-4">
+              <button className="bg-yellow-500 text-white font-semibold px-4 py-2 rounded-full flex items-center hover:bg-yellow-600">
+                <i className="fas fa-plus mr-2"></i> Add
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+  
   );
 };
 
