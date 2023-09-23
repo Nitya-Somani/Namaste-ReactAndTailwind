@@ -11,8 +11,9 @@ Welcome to **TastyFood**, where culinary adventures await! Dive into a world of 
 
 ## 🌟 Key Highlights
 
-- **React.js**: We've harnessed the power of React.js to build a responsive and interactive user interface.
+- **React.js**: I've harnessed the power of React.js to build a responsive and interactive user interface.
 
+- **Tailwind CSS** : I've leveraged Tailwind CSS to simplify and streamline our UI design and styling process, allowing us to create beautiful and responsive interfaces with ease.
 
 - **Parcel.js**: The bundling and development server capabilities of Parcel.js streamlined our development workflow.
 
@@ -66,7 +67,7 @@ To get started with TastyFood, follow these simple steps:
 1. **Clone the Repository**:
 
   
-   git clone https://github.com/Nitya-Somani/Namaste-React.git
+   git clone https://github.com/Nitya-Somani/Namaste-ReactAndTailwind.git
 
 1. Install Dependencies:
     - npm install
@@ -75,7 +76,7 @@ To get started with TastyFood, follow these simple steps:
  - npm start 
 
 Visit and Explore 🌐
-To experience the magic of TastyFood, visit TastyFood App - "coming soon ..."
+To experience the magic of TastyFood, visit TastyFood App - https://tastyfood-2.netlify.app/
 
 Usage 🍴
 Explore Restaurants 🍔🍕:
@@ -92,15 +93,14 @@ Savor a consistently delightful experience, whether you're on desktop, tablet, o
 
 🌐 Important: CORS Extension 🌐 - To enhance your experience on TastyFood, please consider enabling a CORS extension in your browser. This will allow our live API from Swiggy to function seamlessly. 
 
-🤝 Contributing
-We welcome contributions! If you'd like to contribute to TastyFood , please feel free to contribute it . 
+
 
 🙌 Acknowledgments
 I'd like to thank the following libraries and tools that made TastyFood possible:
 
 - **React.js**
 - **HTML**
-- **Tailwind**
+- **Tailwind CSS**
 - **Parcel.js**
 - **Babel.js**
 
