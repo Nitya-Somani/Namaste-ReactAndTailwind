@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard,{isVegLabel} from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -9,13 +9,15 @@ const Body = () => {
   const [filteredResList, setFilteredResList] = useState([]);
   const [searchText, setSearchText] = useState("");
 
+  const RestaurantWithLabel = isVegLabel(RestaurantCard);
+
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
     try {
-      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.7051457&lng=75.8559729&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const data = await fetch("https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
       const json = await data.json();
       const restaurants = json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
       console.log(restaurants);
@@ -59,7 +61,7 @@ ERR_INTERNET_DISCONNECTED<br/>
   
   </div>}
     
-  
+    console.log(originalData);
   return (
     <div className="body ">
   <div className="searching-bar">
@@ -91,6 +93,7 @@ ERR_INTERNET_DISCONNECTED<br/>
 
 
 <div className="restaurantContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+  {console.log(filteredResList)}
   {filteredResList.length === 0 && searchText.length === 0 ? (
     <Shimmer />
   ) : filteredResList.length === 0 && searchText.length > 0 ? (
@@ -105,7 +108,9 @@ ERR_INTERNET_DISCONNECTED<br/>
         className="hover:shadow-lg transition duration-300"
       >
         <div className=" rounded-lg p-2 ">
-          <RestaurantCard resData={restaurant} />
+          
+          {/* if  the label off veg is true then return isVegLabel elese return restaurantcard  */}
+          {restaurant?.info?.veg === true ? <RestaurantWithLabel resData={restaurant}/> :<RestaurantCard resData={restaurant} />}
         </div>
       </Link>
     ))
