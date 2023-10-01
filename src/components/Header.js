@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { LOGO_URL } from "../utils/commonLinks";
 import{Link} from "react-router-dom";
+import UserContext from "../utils/UserContext";
 
 
 const Header = () => {
 //whenever state variable update , react triggers a reconciliation cycle (re renders the component )
   const [toggleUserAuth,setToggleUserAuth] = useState("Login");
+
+  const {LoggedInUser} = useContext(UserContext);
  
   return (
      <nav className=" m-5 p-5">
@@ -34,6 +37,9 @@ const Header = () => {
           <Link to="/Contact" className="text-black hover:text-yellow-500">
             Contact
           </Link>
+        </li>
+        <li className="font-bold">
+        {LoggedInUser}
         </li>
       </ul>
    

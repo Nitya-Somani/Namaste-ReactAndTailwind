@@ -105,3 +105,17 @@ in react we use client side routing
   it is used for lazy loading that is when we need it then only it should load and bundled in a new file .
   app bundle size is increasing to bundle it we need the lazy loading this is also known as dynamic import 
   
+
+  # we shoukd avaoid props drilling 
+  to avaoid props drilling react gives us a super power of react Context .
+  for eg : we need user info everywhere 
+  so one way to avoid props drilling is context api 
+  context is a way where you can put the data at a central place and use it anywhere .
+
+  # redux toolkit 
+- install @redux.js/toolkit and react-redux
+- build our store 
+- connect our store to uour app 
+- create a slice in redux store
+- when click on add btn dispatch an action 
+- 

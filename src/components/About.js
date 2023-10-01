@@ -1,6 +1,7 @@
 import UserFunction from "./UserFunction";
 import UserClass from "./UserClass";
 import { Component } from "react";
+import UserContext from "../utils/UserContext";
 
 
 //Let us now convert the about.js componenet into class based componenet to understand the
@@ -30,6 +31,9 @@ class About extends Component{
         
         <h1>Introducing Class Based Component .</h1>        
         <UserClass  Name ={"NITYA"} location ={"INDORE"}  />
+        <UserContext.Consumer>
+            {(data)=>console.log(data)}
+        </UserContext.Consumer>
         
        
         </div>

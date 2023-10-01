@@ -7,6 +7,7 @@ import Body from "./components/Body";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Footer from "./components/Footer";
+import UserContext from "./utils/UserContext";
 
 
 const About = lazy(() =>import("./components/About"));
@@ -15,11 +16,13 @@ const Vision = lazy(()=>import("./components/Vision"));
 
 const AppLayout = () => {
   return (
+    <UserContext.Provider value ={{LoggedInUser:"Nitya Somani"}}>
     <div>
       <Header />
       <Outlet/>
       <Footer/>
     </div>
+    </UserContext.Provider>
   );
 };
 

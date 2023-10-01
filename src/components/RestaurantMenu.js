@@ -2,11 +2,14 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const resData = useRestaurantMenu(resId);
+
+  const[showIndex,setShowindex] = useState(0);
 
   if (resData === null) return <Shimmer />;
 
@@ -54,7 +57,10 @@ const RestaurantMenu = () => {
   
 {/* categories  */}
 {console.log(filterItemcategory)}
-{filterItemcategory.map((category)=>(<RestaurantCategory  key={category.card.card.title}data ={category?.card?.card}/>))}
+{filterItemcategory.map((category,index)=>(<RestaurantCategory 
+ showItems={index=== showIndex?true:false} 
+ setShowindex ={()=>setShowindex(index)}
+ key={category.card.card.title}data ={category?.card?.card}/>))}
 
 </section>
 
