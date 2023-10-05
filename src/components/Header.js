@@ -2,6 +2,7 @@ import { useState,useContext } from "react";
 import { LOGO_URL } from "../utils/commonLinks";
 import{Link} from "react-router-dom";
 import UserContext from "../utils/UserContext";
+import {useSelector} from "react-redux";
 
 
 const Header = () => {
@@ -10,6 +11,8 @@ const Header = () => {
 
   const {LoggedInUser} = useContext(UserContext);
  
+  const cartItems = useSelector((store) => store.cart.items);
+
   return (
      <nav className=" m-5 p-5">
   <div className="flex items-center justify-between">
@@ -29,9 +32,11 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/Vision" className="text-black hover:text-yellow-500">
-            Vision
-          </Link>
+        <Link to="/Cart">
+        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+        <span class="bg-red-500 text-white  px-2 py-1 text-xs font-bold ml-1 rounded-md">
+  {cartItems.length}
+</span></Link> 
         </li>
         <li>
           <Link to="/Contact" className="text-black hover:text-yellow-500">
