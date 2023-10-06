@@ -58,64 +58,141 @@ useEffect (()=>{
 },[someArray])
 so now the use effect will be rendered everytime whenever the array - [someArray will be updated ]
 
-
 # useState hook explained
 
-- useState hook should not be used above the component it will throw a error 
-- useState hook should not  be put in the if else block in the react docs it is mentioned that if u mess up with react the react will  mess with u .
+- useState hook should not be used above the component it will throw a error
+- useState hook should not be put in the if else block in the react docs it is mentioned that if u mess up with react the react will mess with u .
 - never create use state inside for loop , function . the state variables are meant to be created inside the function component at the top and no where else .
-
 
 # shortcut to render a component -rafce in vscode
 
-# react router dom gives a special  hook for handling error 
-# whenever a function starts with use it is a hook 
-- import useRouterError from react -roter -dom 
+# react router dom gives a special hook for handling error
+
+# whenever a function starts with use it is a hook
+
+- import useRouterError from react -roter -dom
 - const error = useRouterError();
-console.log(error);
-it will print the detailed  error 
+  console.log(error);
+  it will print the detailed error
 
+# client -side routing -
 
-# client -side routing - 
-- client side routing is when when we are not  sending any network call to backend and only refreshing our components is known as client side routing 
-in react we use client side routing 
-# server - side routing is when when we are sending a network call to the page  getting the data of the page and loading the complete page   and it is therefore not used in react
+- client side routing is when when we are not sending any network call to backend and only refreshing our components is known as client side routing
+  in react we use client side routing
 
+# server - side routing is when when we are sending a network call to the page getting the data of the page and loading the complete page and it is therefore not used in react
 
- # what does modularity means 
-  - modularity means you break down your code into small smmal  chunks so that your code becomes more maintainable and more testable .
-  
-  Distributing your code into smaller smaller code chunks makes your project more modular and testable 
-  one more advantage is    that you get resuablity and it follows a single responsibility principle .
-  single responsibility principle does not have a hard and fast rule but what i am trying to say is keep your components as light as possible .
+# what does modularity means
 
-  we can optimize our code  by creating custom hooks .
-  what are hooks - hooks are normal javascript function but they are special javascript function as they are given to us by react for eg :useeffect hook , useState hook , useParams
+- modularity means you break down your code into small smmal chunks so that your code becomes more maintainable and more testable .
 
-  Hooks are like utilty functions ultimately . 
+Distributing your code into smaller smaller code chunks makes your project more modular and testable
+one more advantage is that you get resuablity and it follows a single responsibility principle .
+single responsibility principle does not have a hard and fast rule but what i am trying to say is keep your components as light as possible .
 
-  For custom hooks as  at the end of the day they are the helper functions only so it is a best practice to keep them in utlity folder . 
-  and always start the custom hooks with "use" in the starting  because  by the "use" the react will come to know that it is a custom hook . 
+we can optimize our code by creating custom hooks .
+what are hooks - hooks are normal javascript function but they are special javascript function as they are given to us by react for eg :useeffect hook , useState hook , useParams
 
-  whenever you write a hook think of it as a contract and service so there is a contract and what is the hook providing the service and what actually we want as a service .
+Hooks are like utilty functions ultimately .
 
+For custom hooks as at the end of the day they are the helper functions only so it is a best practice to keep them in utlity folder .
+and always start the custom hooks with "use" in the starting because by the "use" the react will come to know that it is a custom hook .
 
-  //CHUNKING ,Code splitting , dynamic bundling , lazy loading ,on demand loading 
+whenever you write a hook think of it as a contract and service so there is a contract and what is the hook providing the service and what actually we want as a service .
 
-  it is used for lazy loading that is when we need it then only it should load and bundled in a new file .
-  app bundle size is increasing to bundle it we need the lazy loading this is also known as dynamic import 
-  
+//CHUNKING ,Code splitting , dynamic bundling , lazy loading ,on demand loading
 
-  # we shoukd avaoid props drilling 
-  to avaoid props drilling react gives us a super power of react Context .
-  for eg : we need user info everywhere 
-  so one way to avoid props drilling is context api 
-  context is a way where you can put the data at a central place and use it anywhere .
+it is used for lazy loading that is when we need it then only it should load and bundled in a new file .
+app bundle size is increasing to bundle it we need the lazy loading this is also known as dynamic import
 
-  # redux toolkit 
+# we shoukd avaoid props drilling
+
+to avaoid props drilling react gives us a super power of react Context .
+for eg : we need user info everywhere
+so one way to avoid props drilling is context api
+context is a way where you can put the data at a central place and use it anywhere .
+
+# redux toolkit
+
 - install @redux.js/toolkit and react-redux
-- build our store 
-- connect our store to uour app 
+- build our store
+- connect our store to uour app
 - create a slice in redux store
-- when click on add btn dispatch an action 
-- 
+- when click on add btn dispatch an action
+-
+
+Namaste React 🚀
+Parcel
+Dev Build
+Local Server
+HMR = Hot Module Replacement
+File Watching Algorithm - written in C++
+Caching - Faster Builds
+Image Optimization
+Minification
+Bundling
+Compress
+Consistent Hashing
+Code Splitting
+Differential Bundling - support older browsers
+Diagnostic
+Error Handling
+HTTPs
+Tree Shaking - remove unused code
+Different dev and prod bundles
+Namaste Food
+/\*\*
+
+Header
+Logo
+Nav Items
+Body
+Search
+RestaurantContainer
+RestaurantCard
+
+- Img
+- Name of Res, Star Rating, cuisine, delery tie
+  Footer
+  Copyright
+  Links
+  Address
+  Contact \*/
+  Two types of Export/Import
+
+Default Export/Import
+export default Component; import Component from "path";
+
+Named Export/Import
+export const Component; import {Component} from "path";
+
+React Hooks
+(Normal JS utility functions)
+
+useState() - Superpowerful State Variables in react
+useEffect()
+2 types Routing in web apps
+Client Side Routing
+Server Side Routing
+Redux Toolkit
+Install @reduxjs/toolkit and react-redux
+Build our store
+Connect our store to our app
+Slice (cartSlice)
+dispatch(action)
+Selector
+Types of testing (devloper)
+Unit Testing
+Integration Testing
+End to End Testing - e2e testing
+Setting up Testing in our app
+Install React Testing Library
+Installed jest
+Installed Babel dependencies
+Configure Babel
+Configure Parcel Config file to disable default babel transpilation
+Jest - npx jest --init
+Install jsdom library
+Install @babel/preset-react - to make JSX work in test cases
+Include @babel/preset-react inside my babel config
+npm i -D @testing-library/jest-dom
