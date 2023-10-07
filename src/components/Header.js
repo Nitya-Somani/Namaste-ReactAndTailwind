@@ -33,8 +33,8 @@ const Header = () => {
         </li>
         <li>
         <Link to="/Cart">
-        <i class="fa-solid fa-cart-shopping fa-xl"></i>
-        <span class="bg-red-500 text-white  px-2 py-1 text-xs font-bold ml-1 rounded-md">
+        <i className="fa-solid fa-cart-shopping fa-xl"></i>
+        <span className="bg-red-500 text-white  px-2 py-1 text-xs font-bold ml-1 rounded-md">
   {cartItems.length}
 </span></Link> 
         </li>
