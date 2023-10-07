@@ -5,6 +5,8 @@ Namaste React Course from Zero to Hero 🚀 by Akshay Saini Founder of NamasteDe
 This project is a part of the "Namaste React" course by Akshay Saini.
 It's a testament to the knowledge and skills gained during this course.
 
+It's the Upgraded Version with Tailwind CSS and JEST of my Repository Namaste-React.
+
 # 🌮 TastyFood: Discover Culinary Delights 🍽️
 
 Welcome to **TastyFood**, where culinary adventures await! Dive into a world of exceptional flavors and seamless food ordering experiences. My app is designed to tantalize your taste buds and simplify your culinary adventures.
@@ -103,6 +105,8 @@ I'd like to thank the following libraries and tools that made TastyFood possible
 - **Tailwind CSS**
 - **Parcel.js**
 - **Babel.js**
+- **Jest**
+- **React-Testing Library**
 
 
 Thank you for being a part of the TastyFood Project ! Bon appétit! 🍽️
