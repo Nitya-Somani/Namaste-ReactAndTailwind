@@ -55,8 +55,11 @@ Discover the exciting features that set TastyFood apart:
 
 ### 7. Lazy Loading 🚀
 
-🚀 We've implemented lazy loading to optimize app performance and loading times, ensuring a smooth experience for our users.
+🚀 I've implemented lazy loading to optimize app performance and loading times, ensuring a smooth experience for our users.
 
+### 8. Add to cart 🛒
+
+🛒 I've implemented add to cart feature by which user can seamlessly add the product to the cart.
 
 ## 🚀 Getting Started
 
