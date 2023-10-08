@@ -14,7 +14,7 @@ const RestaurantCard = (resData) => {
   return (
     <div className="cards-container flex flex-col items-center gap-6">
       <div className="card bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
-        <div className="card-media relative overflow-hidden">
+        <div className="card-media relative overflow-hidden" data-testid="resCard">
           <img
             src={IMG_URL + cloudinaryImageId}
             alt="Restaurant Card Image"
