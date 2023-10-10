@@ -16,7 +16,7 @@ const Header = () => {
   return (
      <nav className=" m-5 p-5">
   <div className="flex items-center justify-between">
-    <a href="https://tastyfood15.netlify.app/" className="text-black">
+    <a href="https://tastyfood-2.netlify.app/" className="text-black">
       <img src={LOGO_URL} alt="NS Logo" className="w-16" />
     </a> 
     <div id="collapsibleNavbar" className=" flex flex-row">
